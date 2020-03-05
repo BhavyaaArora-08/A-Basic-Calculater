@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="calculator">
+    <form class="calc">
+      <br>
+      <br>
+      <input type="text" id="output" placeholder="0">
+
+      <br>
+      <input type="button" class="sky" value=" AC " onclick="clr(); return false;">
+      <input type="button" class="sky" value=" +/- " onclick="sign(); return false;">
+      <input type="button" class="sky" value=" % " onclick=" addDigit('%'); return false; ">
+      <input type="button" class="yellow" value=" ÷ " onclick=" addDigit('/'); return false; ">
+
+      <br>
+
+      <input type="button" class="white" value=" 7 " onclick=" addDigit(7); return false; ">
+      <input type="button" class="white" value=" 8 " onclick=" addDigit(8); return false; ">
+      <input type="button" class="white" value=" 9 " onclick=" addDigit(9); return false; ">
+      <input type="button" class="yellow" value=" x " onclick=" addDigit('*'); return false; ">
+      <br>
+
+      <input type="button" class="white" value=" 4 " onclick=" addDigit(4); return false; ">
+      <input type="button" class="white" value=" 5 " onclick=" addDigit(5); return false; ">
+      <input type="button" class="white" value=" 6 " onclick=" addDigit(6); return false; ">
+      <input type="button" class="yellow" value=" - " onclick=" addDigit('-'); return false; ">
+      <br>
+
+      <input type="button" class="white" value=" 1 " onclick=" addDigit(1); return false; ">
+      <input type="button" class="white" value=" 2 " onclick=" addDigit(2); return false; ">
+      <input type="button" class="white" value=" 3 " onclick=" addDigit(3); return false; ">
+      <input type="button" class="yellow" value=" + " onclick=" addDigit('+'); return false; ">
+      <br>
+
+      <input type="button" id="zero" class="white" value=" 0 " onclick=" addDigit(0); return false; ">
+      <input type="button" class="white" value=" . " onclick=" addDigit('.'); return false; ">
+      <input type="button" class="yellow" value=" = " onclick=" solve(); return false; ">
+
+      <br>
+
+    </form>
+  </div>
+
+  <script src="js/script.js" charset="utf-8"></script>
+  <br>
+</body>
+
+</html>
